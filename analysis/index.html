@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+	    <title>Expository Essay Analysis: Home</title>
+	    <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src=" ./js/demo.js"></script>
+        <script>
+            window.onload = function() {
+                $(window).on('scroll', function() {
+                    let allSections = $('article > section');
+                    let screenHeight = $(window).height();
+                    let scrollTop = $(window).scrollTop();
+                    allSections.each(function(index) {
+                        let section = allSections.eq(index);
+                        if(screenHeight + scrollTop - 30 > section.offset().top) {
+                            section.animate({'top': 0, 'opacity': 1}, 400)
+                        }
+                    });
+                });
+            };
+        </script>
+        <style>
+            article {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                transform:
+                translateY(-50%);
+            }
+            span {
+
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a>+</a><a href="index.html">Home</a><a href="example.html">Essay Example</a><a href="guideline.html">Analysis Guidelines</a><a href="analysis.html">Structure Analysis</a>
+        </nav>
+        <article>
+            <h1>Expository Essay Analysis</h1>
+            <section>
+                <h2></h2>
+                <p>
+                    
+                </p>
+            </section>
+            <section>
+                <h2></h2>
+                <p>
+                    
+                </p>
+            </section>
+            <p>
+                Fall 2021, Billingual Web Design, Kai-Hsin Hung
+                casey021228@gmail.com
+            </p>
+            <p>
+                Last Updated on Jan. 13, 2022
+            </p>
+        </article>
+    </body>	
+</html>
