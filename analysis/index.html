@@ -1,88 +1,18 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
     <head>
-	    <title>Expository Essay Analysis: Home</title>
-	    <meta charset="utf-8">
+        <title>Expository Essay Analysis: Home</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/demo.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src=" ./js/demo.js"></script>
-        <script>
-            window.onload = function() {
-                $(window).on('scroll', function() {
-                    let allSections = $('article > section');
-                    let screenHeight = $(window).height();
-                    let scrollTop = $(window).scrollTop();
-                    allSections.each(function(index) {
-                        let section = allSections.eq(index);
-                        if(screenHeight + scrollTop - 30 > section.offset().top) {
-                            section.animate({'top': 0, 'opacity': 1}, 400)
-                        }
-                    });
-                });
-            };
-        </script>
-        <style>
-            article {
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                transform:
-                translateY(-50%);
-            }
-            span.joint {
-                color: #a6611a;
-            }
-
-            span.vocab {
-                padding: 0 4px;
-                border-radius: 2p;
-                background-color: #018571;
-                color: white;
-            }
-
-            span.vocab > span {
-                display: none;
-                position: fixed;
-                top: 50;
-                left: 10;
-                transform: translateY(-50%);
-                max-width: 50vw;
-                padding: 0 4px;
-                border-radius: 2px;
-                background-color: #dfc27d;
-                color: #000a16;
-            }
-
-            span.vocab:hover > span {
-                display: block;
-                opacity: 0.9;
-            }
-
-            article > section {
-                position: relative;
-                top: 50px;
-            }
-        </style>
     </head>
     <body>
         <nav>
-            <a>+</a><a href="index.html">Home</a><a href="example.html">Essay Example</a><a href="analysis.html">Structure Analysis</a>
+            <a href="#"><span>+</span></a><a href="index.html">Home</a><a href="example.html">Essay Example</a><a href="analysis.html">Structure Analysis</a>
         </nav>
-        <article>
+        <article style="text-align: center; position: absolute; top: 50%; width: 100%;">
             <h1>Expository Essay Analysis</h1>
-            <section>
-                <h2></h2>
-                <p>
-                    
-                </p>
-            </section>
-            <section>
-                <h2></h2>
-                <p>
-                    
-                </p>
-            </section>
             <p>
                 Fall 2021, Billingual Web Design, Kai-Hsin Hung
                 casey021228@gmail.com
